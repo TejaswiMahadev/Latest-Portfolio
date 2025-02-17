@@ -3,8 +3,7 @@ import type { Metadata } from "next"
 import type React from "react"
 import { Stars } from "./components/Stars"
 import { Navbar } from "./components/Navbar"
-import { Clouds } from "./components/Clouds"
-import { CustomCursor } from "./components/CustomCursor"
+
 
 export const metadata: Metadata = {
   title: "Tejaswi Mahadev",
@@ -23,7 +22,7 @@ export default function RootLayout({
           <Stars count={800} />
           <PixelMoon />
           <Navbar />
-          <CustomCursor/>
+     
           {children}
         </div>
       </body>
