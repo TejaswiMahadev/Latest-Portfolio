@@ -1,21 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: "Press Start 2P", cursive;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.pixel-frame {
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 4px #000000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pixel-button {
+  background-color: #4a4a4a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  image-rendering: pixelated;
+  transition: all 0.3s ease;
+}
+
+.pixel-button:hover {
+  background-color: #6a6a6a;
+  box-shadow: 0 0 10px #ffffff;
+  transform: scale(1.05);
+}
+
+.pixel-text-box {
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.pixel-art {
+  image-rendering: pixelated;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.star {
+  animation: twinkle 2s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s step-end infinite;
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+}
+
+.star {
+  animation: twinkle var(--twinkle-duration) infinite;
+}
+
+@keyframes shooting-star {
+  from {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-200px) translateY(100px);
+    opacity: 0;
+  }
+}
+
+.shooting-star {
+  animation: shooting-star 4s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(calc(-1 * var(--float-distance)));
+  }
+}
+
+.cloud {
+  animation: float var(--float-duration) infinite ease-in-out;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.custom-cursor {
+  width: 24px;
+  height: 24px;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.custom-cursor .cursor-body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: rotate(45deg) skew(10deg, 10deg);
+  position: relative;
+}
+
+.custom-cursor .cursor-body::before,
+.custom-cursor .cursor-body::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+.custom-cursor .cursor-body::before {
+  width: 25%;
+  height: 25%;
+  top: 75%;
+  left: 0;
+}
+
+.custom-cursor .cursor-body::after {
+  width: 25%;
+  height: 75%;
+  top: 25%;
+  left: 75%;
+}
+
+.custom-cursor.pointer .cursor-body,
+.custom-cursor.pointer .cursor-body::before,
+.custom-cursor.pointer .cursor-body::after {
+  background-color: #ff00ff;
 }

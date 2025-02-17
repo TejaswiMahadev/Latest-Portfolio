@@ -1,0 +1,4 @@
+create a research paper and community contribution section
+🧠 "Talk to My Brain" – A chatbot trained on your blogs, projects, and research that answers visitor queries.
+ Fun AI Tool – Example: A "Which ML Algorithm Are You?" quiz based on personality traits.
+ ✅ 🕹️ Mini AI Game – Example: "Can You Beat My ML Model?" (a fun AI-powered puzzle game).
