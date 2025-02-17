@@ -1,42 +1,3 @@
-// "use client"
-
-// import { useState, useEffect } from "react"
-
-// interface StarsProps {
-//   count: number
-// }
-
-// export function Stars({ count }: StarsProps) {
-//   const [stars, setStars] = useState<{ top: string; left: string; size: string; animationDuration: string }[]>([])
-
-//   useEffect(() => {
-//     const newStars = Array.from({ length: 200 }, () => ({
-//       top: `${Math.random() * 100}%`,
-//       left: `${Math.random() * 100}%`,
-//       size: `${Math.random() * 2 + 1}px`,
-//       animationDuration: `${Math.random() * 3 + 2}s`,
-//     }))
-//     setStars(newStars)
-//   }, [])
-
-//   return (
-//     <>
-//       {stars.map((star, index) => (
-//         <div
-//           key={index}
-//           className="star absolute bg-white rounded-full"
-//           style={{
-//             top: star.top,
-//             left: star.left,
-//             width: star.size,
-//             height: star.size,
-//             animationDuration: star.animationDuration,
-//           }}
-//         />
-//       ))}
-//     </>
-//   )
-// }
 import type React from "react"
 
 // Define custom CSS properties type
@@ -72,7 +33,7 @@ interface StarsProps {
 }
 
 export const Stars: React.FC<StarsProps> = ({ count }) => {
-  const stars = Array.from({ length: count }, (_, i) => ({
+  const stars = Array.from({ length: count }, () => ({
     x: Math.random() * 100,
     y: Math.random() * 100,
     size: Math.random() * 2 + 1,
@@ -121,7 +82,7 @@ interface CloudsProps {
 }
 
 export const Clouds: React.FC<CloudsProps> = ({ count }) => {
-  const clouds = Array.from({ length: count }, (_, i) => ({
+  const clouds = Array.from({ length: count }, () => ({
     x: Math.random() * 100,
     y: Math.random() * 50,
     width: Math.random() * 100 + 50,
