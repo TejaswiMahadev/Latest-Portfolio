@@ -31,8 +31,9 @@ export default function MainContent() {
           <div className="pixel-frame p-4">
             <h2 className="text-2xl mb-4 text-white">About Me</h2>
             <p className="text-white">
-              &apos;I'm a pixel artist and web developer passionate about creating retro-inspired digital experiences.
-            </p>
+  I&apos;m a pixel artist and web developer passionate about creating retro-inspired digital experiences.
+</p>
+
           </div>
         )}
 
