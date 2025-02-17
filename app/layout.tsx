@@ -21,7 +21,7 @@ export default function RootLayout({
         <div className="min-h-screen bg-gradient-to-b from-[#000033] to-[#c912b1] relative overflow-hidden">
           <Stars count={800} />
           <PixelMoon />
-          <Navbar isVisible={true} />
+{/*           <Navbar isVisible={true} /> */}
 
      
           {children}
