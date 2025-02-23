@@ -22,7 +22,7 @@ const clubs = [
 ]
 
 const publications = [
-  { name: "Portfolio Optimization using ML & QML", description: "How ML and QML impacts Financial Portfolio Optimization", link: "https://example.com/portfolio-optimization" },
+  { name: "Portfolio Optimization using ML & QML (to be published)", description: "How ML and QML impacts Financial Portfolio Optimization", link: "https://example.com/portfolio-optimization" },
   
 ]
 
