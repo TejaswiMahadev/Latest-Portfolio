@@ -54,7 +54,7 @@ export function Skills() {
         </div>
 
         <div className="pixel-frame p-8">
-          <h2 className="text-3xl mb-8 text-white text-center">Publications</h2>
+          <h2 className="text-3xl mb-8 text-white text-center">Research Papers</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {publications.map((publication, index) => (
               <SkillCard key={index} name={publication.name} description={publication.description} link={publication.link} />
