@@ -23,6 +23,7 @@ const clubs = [
 
 const publications = [
   { name: "Portfolio Optimization using ML & QML (to be published)", description: "How ML and QML impacts Financial Portfolio Optimization", link: "https://example.com/portfolio-optimization" },
+   { name: "AI Powered Shopping Assistants using Sentimental Analysis", description: "Awn intelligent e-commerce assistant that analyzes customer sentiment in real-time to deliver personalized shopping experiences", link: "https://www.ijaresm.com/ai-powered-shopping-assistants-using-sentiment-analysis " },
   
 ]
 
