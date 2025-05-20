@@ -73,6 +73,15 @@ const projects: ProjectProps[] = [
     sourceCode:"https://github.com/TejaswiMahadev/Telegram-AI-Agent",
 
   },
+    {
+    name: "Graphly",
+    description: "A 3D Knowledge Graph Builder built using Google Gemini , LangChain and Neo4j",
+    thumbnail: "/cat.webp",
+    gif: "/know.webp",
+    liveDemo: "https://graphly-axpk.onrender.com",
+    sourceCode:"https://github.com/TejaswiMahadev/Graphly",
+
+  },
 ]
 
 export function Projects() {
