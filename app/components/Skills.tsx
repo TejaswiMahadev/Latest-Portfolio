@@ -30,6 +30,7 @@ const publications = [
 const blogs = [
   { name: "RLHF: The Secret Sauce Making AI Actually Useful (and Less Likely to Go Rogue)", description: "Understanding RLHF", link: "https://medium.com/@tejaswimahadev9/rlhf-the-secret-sauce-making-ai-actually-useful-and-less-likely-to-go-rogue-20a90246ede4" },
   { name: "The DeepSeek Revolution: The AI Game Changer You Need to Know About", description: "AI tool powerhouse ", link: "https://dev.to/nitdgplug/the-deepseek-revolution-the-ai-game-changer-you-need-to-know-about-1f57" },
+  {name: "MCP: The AI Agent’s Universal Translator — Bridging the Divide Between Model and Machine", description:"Understanding the base of AI Agents" , link : "https://medium.com/@tejaswimahadev9/mcp-the-ai-agents-universal-translator-bridging-the-divide-between-model-and-machine-4b26bb9853a3"},
 ]
 
 export function Skills() {
